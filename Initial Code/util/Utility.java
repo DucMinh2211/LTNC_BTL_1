@@ -36,4 +36,15 @@ public class Utility {
 		int x = (int) Math.sqrt(num);
 		return x*x == num;
 	}
+
+	/**
+	 * Test whether a specific number is fibonacci number.
+	 */
+	public static boolean isFibonacci(int num) {
+		// Using fibonacci math formula.
+		if (num < 2) return false;
+		int test1 = 5*num*num + 4;
+		int test2 = 5*num*num - 4;
+		return isSquare(test1) || isSquare(test2);
+	}
 }
