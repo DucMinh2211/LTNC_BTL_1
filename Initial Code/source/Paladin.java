@@ -5,6 +5,9 @@ public class Paladin extends Knight {
 
 	@Override
 	public double getCombatScore() {
-		if (this.getBaseHP())
+		int hp = this.getBaseHp();
+		int fiboIdxOfHp = Utility.getFibonacciIndex((int)hp);
+		if (fiboIdxOfHp > 2) return 1000 + fiboIdxOfHp;
+		return hp * 3.0;
 	}
 }
