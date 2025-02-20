@@ -1,6 +1,3 @@
-
-import jdk.jshell.execution.Util;
-
 public class Knight extends Fighter {
     public Knight(int baseHp, int wp) {
         super(baseHp, wp);
@@ -9,9 +6,9 @@ public class Knight extends Fighter {
     @Override
     public double getCombatScore() {
         if (Utility.isSquare(Battle.GROUND)) {
-            return getBaseHP()*2.0;
+            return this.getBaseHP()*2.0;
         }
-        if (this.getWp() == 1) return getBaseHP();
-        return baseHP / 10.0;
+        if (this.getWp() == 1) return this.getBaseHP();
+        return this.getBaseHP() / 10.0;
     }
 }

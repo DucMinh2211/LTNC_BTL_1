@@ -5,6 +5,6 @@ public class Paladin extends Knight {
 
 	@Override
 	public double getCombatScore() {
-		return 1.0;
+		if (this.getBaseHP())
 	}
 }
