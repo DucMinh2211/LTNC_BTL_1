@@ -5,7 +5,7 @@ public class Knight extends Fighter {
 
     @Override
     public double getCombatScore() {
-        int hp = this.getBaseHP();
+        int hp = this.getBaseHp();
         if (Utility.isSquare(Battle.GROUND)) {
             return hp * 2.0;
         }

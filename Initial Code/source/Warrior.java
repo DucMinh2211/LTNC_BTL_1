@@ -5,7 +5,7 @@ public class Warrior extends Fighter {
 
     @Override
     public double getCombatScore() {
-        int hp = this.getBaseHP();
+        int hp = this.getBaseHp();
         if (Utility.isPrime(Battle.GROUND)) {
             return hp * 2.0;
         }
