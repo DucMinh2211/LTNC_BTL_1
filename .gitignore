@@ -1,5 +1,5 @@
 # Zone Identifier
-*.Identifier
+*.Zone.Identifier
 
 # Compiled class file
 *.class
