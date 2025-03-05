@@ -33,6 +33,9 @@ public class Utility {
   		if (num == 0) {
     		return true;
 		} // 0 là số chính phương (0*0 = 0)
+		if (num == 1) {
+    		return true;
+		} // 1 là số chính phương (1*1 = 1)
 		int x = (int) Math.sqrt(num);
 		return x*x == num;
 	}
